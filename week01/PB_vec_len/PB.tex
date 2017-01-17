@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{parskip}
+
+\usepackage{xeCJK} 
+\setCJKmainfont{Noto Sans CJK TC}
+
+\usepackage{geometry}
+\geometry{
+ a4paper,
+% total={210mm,297mm},
+ left=1in,
+ right=1in,
+ top=1in,
+ bottom=1in
+}
+
+\usepackage{fancyhdr}
+\chead{\raisebox{0.7mm}{2017 NCTU Competitive Programming I - Practice Contest}}
+\pagestyle{fancy}
+
+\usepackage{csquotes}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\begin{center}
+    {\LARGE Problem B}\\
+    {\Large Length of a Vector}\\
+    {Time limit: 1 second}\\
+    {Memory limit: 256 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+Given an $n$-dimensional vectors $\vec{x}=(x_1,x_2,\dots,x_n)$. Write a program to compute the length of $\vec{x}$, i.e., 
+$\|\vec{x}\|=\sqrt{\sum_{i=1}^nx_i^2}$.
+
+\textbf{\large Input Format}
+
+The input contains at most 500 test cases. 
+Each case consists of two lines. The first line contains an integer $n$, 
+and the second line consists of $n$ integers $x_1,\dots,x_n$ separated by 
+blanks. 
+You should compute the length of $\vec{x}$. 
+You may assume that $n$ is at least $1$ and at most $10000$,
+and $x_1,\dots,x_n$ are in $[-100,100]$.
+The input is terminated by end-of-file.
+
+\textbf{\large Output Format}
+
+For each case, output the answer in one line. You should round the answer
+to 3 decimal places.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+1
+1
+9
+1 1 1 1 1 1 1 1 1
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+1.000
+3.000
+\end{verbatim}
+
+\end{document}

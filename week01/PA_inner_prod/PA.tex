@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{parskip}
+
+\usepackage{xeCJK} 
+\setCJKmainfont{Noto Sans CJK TC}
+
+\usepackage{geometry}
+\geometry{
+ a4paper,
+% total={210mm,297mm},
+ left=1in,
+ right=1in,
+ top=1in,
+ bottom=1in
+}
+
+\usepackage{fancyhdr}
+\chead{\raisebox{0.7mm}{2017 NCTU Competitive Programming I - Practice Contest}}
+\pagestyle{fancy}
+
+\usepackage{csquotes}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\begin{center}
+    {\LARGE Problem A}\\
+    {\Large Inner Product}\\
+    {Time limit: 1 second}\\
+    {Memory limit: 256 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+Given two $n$-dimensional vectors $\vec{x}=(x_1,x_2,\dots,x_n)$ and 
+$\vec{y}=(y_1,y_2,\dots,y_n)$. Write a program to compute 
+$\vec{x}\cdot\vec{y}=\sum_{i=1}^nx_iy_i$.
+
+\textbf{\large Input Format}
+
+The input contains at most 500 test cases. 
+Each case consists of two lines. The first line consists of $n$ integers 
+$x_1,\dots,x_n$ separated by blanks, and the second line consists of $n$ 
+integers $y_1,\dots,y_n$ separated by blanks. 
+You should compute  $\vec{x}\cdot\vec{y}=\sum_{i=1}^nx_iy_i$. 
+You may assume that $n$ is at least $1$ and at most $100$,
+and $x_1,\dots,x_n,y_1,\dots,y_n$ are unsigned 32-bit integers.
+The input is terminated by end-of-file, and it may contains trailing spaces.
+
+\textbf{\large Output Format}
+
+For each case, output a decimal integer in one line.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+1
+1
+1 2 3 4 5 6 7 8 9
+9 8 7 6 5 4 3 2 1
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+1
+165
+\end{verbatim}
+
+\end{document}

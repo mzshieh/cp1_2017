@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{parskip}
+
+\usepackage{xeCJK} 
+\setCJKmainfont{Noto Sans CJK TC}
+
+\usepackage{geometry}
+\geometry{
+ a4paper,
+% total={210mm,297mm},
+ left=1in,
+ right=1in,
+ top=1in,
+ bottom=1in
+}
+
+\usepackage{fancyhdr}
+\chead{\raisebox{0.7mm}{2017 NCTU Competitive Programming I - Practice Contest}}
+\pagestyle{fancy}
+
+\usepackage{csquotes}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\begin{center}
+    {\LARGE Problem H}\\
+    {\Large NCTU Thunder}\\
+    {Time limit: 2 seconds}\\
+    {Memory limit: 256 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+交⼤有一段時間參加 ACM-ICPC 的隊伍名稱都跟雷電有關：因為「交⼤都是雷」。
+因此不可避免的，上場⽐賽難免也會雷雷的，交⼤的教練感到⾮常苦惱。參加 
+ACM-ICPC 的隊伍，⼀隊需要三個⼈，⽽根據不禮貌的想像，⼀個隊伍「雷」的程度，
+是由隊員兩兩之間的交互作⽤引發的「雷⼒」⼤⼩決定。譬如說 \verb+NCTU_Thor+ 
+這⼀隊由 \verb+aaaaajack+、\verb+leopan0922+、\verb+iclan+ 三個⼈組成，
+\verb+aaaaajack+ 跟 \verb+leopan0922+ 之間產⽣的「雷⼒」為 $a$、
+\verb+leopan0922+ 跟 \verb+iclan+ 之間產⽣的「雷⼒」為 $b$、\verb+iclan+ 跟
+\verb+aaaaajack+ 之間產⽣的「雷⼒」為 $c$，則 \verb+NCTU_Thor+ 這⼀隊的
+「內部雷⼒」為 $a + b + c$，將與實際「雷」的程度成正⽐。
+
+教練請⽰過校⾨⼝⼟地公後，總算知道學⽣與學⽣之間兩兩交互作⽤所
+產⽣的雷⼒數值。請幫交⼤的教練寫⼀個程式，找出最理想的組隊⽅式，
+也就是將所有隊伍的「總內部雷⼒」降到最低。
+
+\textbf{\large Input Format}
+
+第⼀⾏有⼀整數 $T$ 代表有多少測試資料，$T$ 最多 $20$。每⼀筆測試資料的
+第⼀⾏有⼀個數字 $N$，代表有多少隊員，$N$ 必然被 $3$ 整除，且不⼤於 $21$。
+⽅便起⾒，我們將參賽學⽣由 $1$ 到 $N$ 編號。接下來 $N$ ⾏中的第 $i$ ⾏，有
+$N$ 個數字，其中第 $j$ 個就是記錄學⽣ $i$ 與學⽣ $j$ 之間的雷⼒ $R_{i,j}$。
+測試資料中，雷⼒的數值必是不⼤於 $100$ 的⾮負整數、$R_{i,i} = 0$ 
+且 $R_{i,j} = R_{j,i}$。如果不是這樣，出題⽼師就太雷了，這⼀題會送分。
+
+\textbf{\large Output Format}
+
+對每⼀個測試資料，輸出⼀⾏，內含⼀個數字，代表將隊伍分好後，可達
+到的最低「總內部雷⼒」。
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+3
+3
+0 1 1
+1 0 2
+1 2 0
+6
+0 1 1 4 1 3
+1 0 2 1 4 2
+1 2 0 3 2 4
+4 1 3 0 1 1
+1 4 2 1 0 2
+3 2 4 1 2 0
+6
+0 1 1 4 1 3
+1 0 2 1 4 2
+1 2 0 3 2 4
+4 1 3 0 4 4
+1 4 2 4 0 5
+3 2 4 4 5 0
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+4
+8
+11
+\end{verbatim}
+
+\end{document}

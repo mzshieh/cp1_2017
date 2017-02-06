@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{parskip}
+
+\usepackage{xeCJK} 
+\setCJKmainfont{Noto Sans CJK TC}
+
+\usepackage{geometry}
+\geometry{
+ a4paper,
+% total={210mm,297mm},
+ left=1in,
+ right=1in,
+ top=1in,
+ bottom=1in
+}
+
+\usepackage{fancyhdr}
+\chead{\raisebox{0.7mm}{2017 NCTU Competitive Programming I - Practice Contest}}
+\pagestyle{fancy}
+
+\usepackage{csquotes}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\begin{center}
+    {\LARGE Problem F}\\
+    {\Large Stone}\\
+    {Time limit: 1 second}\\
+    {Memory limit: 256 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+Alice and Bob are playing a game with some unbreakable stones. Initially there
+are some piles of stones, and they'll take turns splitting a pile. In each turn,
+a player should choose a pile with more than one stone and split it into at
+least two equivalent piles. Alice move first, and the player who can't make a
+valid move lose. Who will win the game if both of them play optimally?
+
+\textbf{\large Input Format}
+
+The first line contains an integer $T$ ($T\le 20$), the number of test cases.
+Each test case contains two lines.
+The first line contains an integer $n$ ($n\le 10000$), which is the number of
+piles.
+The second line contains $n$ integers $a_1,a_2,\dots,a_n$ ($a_i\le 10^9$),
+giving the number of stones in each pile.
+
+\textbf{\large Output Format}
+
+For each test case, print ``Alice'' if Alice will win or ``Bob'' otherwise in
+one line.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+3
+2
+3 15
+3
+3 5 15
+4 
+3 5 15 21
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+Alice
+Alice
+Bob
+\end{verbatim}
+
+\end{document}

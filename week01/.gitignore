@@ -1,0 +1,5 @@
+*.zip
+*.aux
+*.log
+a.out
+*ref

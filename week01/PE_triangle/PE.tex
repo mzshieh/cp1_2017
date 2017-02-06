@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{parskip}
+
+\usepackage{xeCJK} 
+\setCJKmainfont{Noto Sans CJK TC}
+
+\usepackage{geometry}
+\geometry{
+ a4paper,
+% total={210mm,297mm},
+ left=1in,
+ right=1in,
+ top=1in,
+ bottom=1in
+}
+
+\usepackage{fancyhdr}
+\chead{\raisebox{0.7mm}{2017 NCTU Competitive Programming I - Practice Contest}}
+\pagestyle{fancy}
+
+\usepackage{csquotes}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\begin{center}
+    {\LARGE Problem E}\\
+    {\Large Triangles}\\
+    {Time limit: 1 second}\\
+    {Memory limit: 256 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+A triangle is a shape which can be formed by connecting three non-colinear
+points with straight lines.
+Given a retangular grid formed by $n$ horizontal lines and $m$ vertical lines.
+How many different triangles be formed using the points on the intersections
+of the grid if all grid cells have the same area?
+
+\textbf{\large Input Format}
+
+In first line of input, there is an integer $T$ ($T\le 100$) indicating the
+number of test cases. Each of the following $n$ lines contains a test case.
+Each test case has two positive integers $n$ and $m$ saparated by a blank. Both
+of them are no more than $100$, and there prodect $nm$ is no more than $1024$.
+
+\textbf{\large Output Format}
+
+For each test case, output an integer representing the number of such triangles.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+2
+2 2
+3 3
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+4
+76
+\end{verbatim}
+
+\end{document}

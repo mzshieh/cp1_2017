@@ -1,7 +1,7 @@
 # NCTU Competitive Programming 2, 2016 Spring
 
 +   Instructor: [Dr. Min-Zheng Shieh](mailto:mzshieh@nctu.edu.tw)
-+   Teaching Assistants: [Chun-Kai Chen]
++   Teaching Assistants: Chun-Kai Chen
 +   Lectures for beginners: 3IJK @ ED117.
 +   Classes for juniors: TBD
 +   Practice: 3GHYIJKLM @ EC330.

@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{parskip}
+
+\usepackage{xeCJK} 
+\setCJKmainfont{Noto Sans CJK TC}
+
+\usepackage{geometry}
+\geometry{
+ a4paper,
+% total={210mm,297mm},
+ left=1in,
+ right=1in,
+ top=1in,
+ bottom=1in
+}
+
+\usepackage{fancyhdr}
+\chead{\raisebox{0.7mm}{2017 NCTU Competitive Programming I - Homework}}
+\pagestyle{fancy}
+
+\usepackage{csquotes}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\begin{center}
+    {\LARGE Problem A}\\
+    {\Large PMA Expressions}\\
+    {Time limit: 1 second}\\
+    {Memory limit: 256 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+A Parenthesis-Multiplication-Addition (PMA) expression 
+consists of only parentheses, multiplications, additions and digits. That is,
+a PMA expression only uses \verb+(+, \verb+)+, \verb+*+ (multiplication), 
+\texttt{+} (addition), and numbers.
+To make the problem easier, we define valid PMA expressions for this problem 
+as follows.
+\begin{itemize}
+\item A number is a valid PMA expression. For example, $4$ is a valid PMA 
+expression.
+\item If $expr$ is a valid PMA expression, then $(expr)$ is a valid PMA 
+expression. For instance, $(4)$ is a valid PMA expression, since $4$ is. 
+\item If $expr_1$ and $expr_2$ are valid PMA expressions, then both 
+$expr_1+expr_2$ and $expr_1*expr_2$ are also valid. For instances, $1+2$ and 
+$1*2$ are valid, since $1$ and $2$ are valid.
+\item A valid PMA expression must be derived from the above rules.
+\end{itemize}
+
+Your task is to evaluate valid PMA expressions. You should output the results 
+modulo $10^9+7$. You can implement the program with 64-bit integers.
+
+\textbf{\large Input Format}
+
+The input is terminated by end-of-file, and there are at most 100 test cases.
+Each test case is a line consisting of \verb+(+, \verb+)+, \verb+*+,
+\texttt{+}, and \verb+0+, \verb+1+, $\dots$, \verb+9+. For convenience, you
+may assume any number in the input is a single digit. I.e., only 
+$0,1,2,3,4,5,6,7,8,9$ are in the input. However, the intermidiate results might
+be much larger. 
+
+Note: all test cases are valid PMA expressions of length at most 2048.
+
+\textbf{\large Output Format}
+
+For each test case, output the evaluation result modulo $10^9+7$.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+1+2*3+4
+5*6*7*8*9
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+11
+15120
+\end{verbatim}
+
+\end{document}

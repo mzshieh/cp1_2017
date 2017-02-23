@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{parskip}
+
+\usepackage{xeCJK} 
+\setCJKmainfont{Noto Sans CJK TC}
+
+\usepackage{geometry}
+\geometry{
+ a4paper,
+% total={210mm,297mm},
+ left=1in,
+ right=1in,
+ top=1in,
+ bottom=1in
+}
+
+\usepackage{fancyhdr}
+\chead{\raisebox{0.7mm}{2017 NCTU Competitive Programming I - Homework}}
+\pagestyle{fancy}
+
+\usepackage{csquotes}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\begin{center}
+    {\LARGE Problem B}\\
+    {\Large Factoring a Function}\\
+    {Time limit: 1 second}\\
+    {Memory limit: 256 megabytes}
+\end{center}
+
+\textbf{\large Problem Description}
+
+Given a function $f:\{1,\dots,n\}\rightarrow\{1,\dots,n\}$ mapping integers 
+$1,\dots,n$ into values among $1,\dots,n$. We say $f$ can be factored
+into two functions $g:\{1,\dots,n\}\rightarrow\{1,\dots,m\}$ and 
+$h:\{1,\dots,m\}\rightarrow\{1,\dots,n\}$ if the following conditions hold.
+\begin{itemize}
+\item $m\le n$.
+\item $h(g(x))=f(x)$ for $x\in\{1,\dots,n\}$.
+\item $g(h(x))=x$ for $x\in\{1,\dots,m\}$.
+\end{itemize}
+For example, $f(x)=2$ for $n=3$ can be factored into $g(x)=1$ and $h(x)=2$ by
+choosing $m=1$. 
+
+If there does not exist such integer $m$, function $g$, and function $h$, then
+we say that $f$ cannot be factored.
+
+
+
+\textbf{\large Input Format}
+
+Each test case consists of two lines. The first line is an integer $n$ 
+($1\le n\le5$) indicating the domain and range of $f$. 
+The second line consists of $n$
+integers $f(1),\dots,f(n)$ saparated by blanks where $f(i)\in\{1,\dots,n\}$ for
+$i\in\{1,\dots,n\}$.
+
+The input is terminated by $n=0$, and there are at most 3456 test cases.
+
+\textbf{\large Output Format}
+
+For each test case, output \verb+yes+ if we can factor $f$ into some $g$ and 
+$h$. Otherwise, output \verb+no+.
+
+\textbf{\large Sample Input}
+
+\begin{verbatim}
+3
+1 2 3
+2
+2 1
+3
+2 2 2
+0
+\end{verbatim}
+
+\textbf{\large Sample Output}
+\begin{verbatim}
+yes
+no
+yes
+\end{verbatim}
+
+\end{document}

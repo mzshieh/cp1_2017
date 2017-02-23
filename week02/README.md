@@ -92,8 +92,8 @@ Sample problems:
 ### Programming Assignment (Due: 23:59:59, Mar 18, 2017)
 We will put the problems to NCTU OJ after examine the test cases.
 
-+	[Problem A](hw/PA.pdf)
-+	[Problem B](hw/PB.pdf)
++	[Problem A](hw/PA.pdf): [Submit here](https://oj.nctu.me/groups/2/problems/10510/)
++	[Problem B](hw/PB.pdf): [Submit here](https://oj.nctu.me/groups/2/problems/10511/)
 
 ### Practice problems
 Please do not register this course if you cannot accomplish following five problems.

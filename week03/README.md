@@ -33,9 +33,11 @@ The following algorithms are frequently used in programming contest.
 +   [`upper_bound()`](http://www.cplusplus.com/reference/algorithm/upper_bound/)
 +   [`next_permutation()`](http://www.cplusplus.com/reference/algorithm/next_permutation/)
 
-### Programming assignment (Due: 23:59:59, Mar 12, 2016)
+### Programming assignment (Due: 23:59:59, Mar 25, 2017)
 
-+   Problem A: [UVa 514](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=455)
-+   Problem B: [NCTU OJ 10032](https://oj.nctu.me/groups/1/problems/10032/) [(Problem description)](week02-B.pdf)
-+   Problem C: [NCTU OJ 10024](https://oj.nctu.me/groups/1/problems/10024/) [(Problem description)](week02-C.pdf) *The time limit has been shortened.*
-+   Problem D: [NCTU OJ 10025](https://oj.nctu.me/groups/1/problems/10025/) [(Problem description)](week02-D.pdf)
+### Practice
+
++   [UVa 514](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=455)
++   [NCTU OJ 10032](https://oj.nctu.me/groups/1/problems/10032/)
++   [NCTU OJ 10024](https://oj.nctu.me/groups/1/problems/10024/)
++   [NCTU OJ 10025](https://oj.nctu.me/groups/1/problems/10025/) 

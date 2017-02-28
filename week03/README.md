@@ -30,7 +30,7 @@
     +   [Repeating](slow_pair.cpp) (Slower)
     +   [Non-repeating](fast_pair.cpp)
 
-### Programming assignment (Due: 23:59:59, Mar 26, 2016)
+### Practice
 
 +   Problem A: [UVa 11342](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2317)
 +   Problem B: [UVa 574](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=646&page=show_problem&problem=515)

@@ -12,6 +12,15 @@ Let us see some examples.
 +	Sorting
 +	Binary search
 
+## Computation Resources
+
+In this course, we focus on the following two kinds of resources.
+
++	Time
++	Space
+
+Let us see an example: prefix sums and their applications.
+
 ## Basic data structures and STL
 
 +   [Slides](lec02.pdf)

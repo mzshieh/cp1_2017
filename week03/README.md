@@ -1,3 +1,17 @@
+## Two approches to solve a problem
+
+You have already known the following two approaches.
+
++	Decrease and conquer
++	Divide and conquer
+
+Let us see some examples.
+
++	Evaluate arithmetic expressions
++	Multiplications
++	Sorting
++	Binary search
+
 ## Basic data structures and STL
 
 +   [Slides](lec02.pdf)
@@ -34,6 +48,11 @@ The following algorithms are frequently used in programming contest.
 +   [`next_permutation()`](http://www.cplusplus.com/reference/algorithm/next_permutation/)
 
 ### Programming assignment (Due: 23:59:59, Mar 25, 2017)
+
+We will put the problems to NCTU OJ after examine the test cases.
+
++	[Problem C](PC.pdf) [Submit here](https://oj.nctu.me/groups/2/problems/10512/)
++	[Problem D](PD.pdf)
 
 ### Practice
 

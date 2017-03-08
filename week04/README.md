@@ -34,8 +34,8 @@
 
 We will put the problems to NCTU OJ after examine the test cases.
 
-+	Binary search: [Problem E](PE.pdf)
-+	Divide and conquer: [Problem F](PF.pdf)
++	Binary search: [Problem E](PE.pdf): [Submit here](https://oj.nctu.me/groups/2/problems/10514/)
++	Divide and conquer: [Problem F](PF.pdf): [Submit here](https://oj.nctu.me/groups/2/problems/10515/)
 
 ### Practice
 

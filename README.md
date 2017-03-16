@@ -1,4 +1,4 @@
-# NCTU Competitive Programming 2, 2016 Spring
+# NCTU Competitive Programming 1, 2017 Spring
 
 +   Instructor: [Dr. Min-Zheng Shieh](mailto:mzshieh@nctu.edu.tw)
 +   Teaching Assistants: Chun-Kai Chen
